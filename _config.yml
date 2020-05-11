@@ -3,8 +3,8 @@
 blog_theme: light # Or use dark
 name: Tensor To Tale
 paginate: 5
-baseurl: /tensortotale
-url: http://tensortotale.com
+#baseurl: /tensortotale
+#url: http://tensortotale.com
 #host: 0.0.0.0
 
 # Optional settings
