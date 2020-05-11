@@ -1,0 +1,30 @@
+---
+layout: search-default
+title: "Search"
+description: "Search contents of the blog based on keywords"
+---
+
+<div class="search {% if site.scrollappear_enabled %}scrollappear{% endif %}">
+<div id="search-container">
+<input type="text" id="search-bar" placeholder="search...">
+
+<ul class="search-article-list" id="results-container"></ul>
+</div>
+<script src="/search/javascript/search.js" type="text/javascript"></script>
+
+<script>
+  SimpleJekyllSearch({
+  searchInput: document.getElementById('search-bar'),
+  resultsContainer: document.getElementById('results-container'),
+  searchResultTemplate: '<ul class="search-article-list"><li class="search-article-list-item {% if site.scrollappear_enabled %}scrollappear{% endif %}"><a href={url} title={title}><h5>{title}</h5></a><p>{description}</p><div class="search-article-list-footer"><span>{date}</span><span class="search-article-list-divider">-</span><span>{reading_time}</span><div class="article-list-divider-tag"><i class="fa fa-tags"></i></div><div class="article-list-tags"><a>{tags}</a></div><span class="article-list-divider-tag"><i class="fa fa-wrench fa-flip-horizontal"></i></span><div class="article-list-tags"><a>{categories}</a></div></div></li><hr class="search-article-divider"></ul>',
+  json: '/search/search.json',
+  noResultsText: "No result found!"
+})
+</script>
+
+<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+
+
+</div>
+

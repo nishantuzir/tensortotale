@@ -1,0 +1,39 @@
+// =============================================================================
+// About
+// =============================================================================
+
+.about {
+  //font-family: Alegreya;
+  padding: 20px 0;
+  h1 {
+    margin: 50px 0 15px;
+    font-family: cursive;
+
+  }
+  p{
+    text-align: justify;
+  }
+  p.breakAfter{
+    margin-bottom:1em;
+    a{
+      text-decoration: none;
+    }
+  }
+  img{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-radius: 6px;
+  }
+}
+.first-letter {
+  //color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 55px;
+  line-height: 0px;
+  padding-top: 4px;
+  padding-right: 2px;
+  //padding-left: 0px;
+}
+
+
