@@ -1,9 +1,124 @@
----
-layout: default
-title: "Nishant Uzir"
-description: "A brief description about the blog"
----
-<div class="about {% if site.scrollappear_enabled %}scrollappear{% endif %}">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Tensor To Tale | Nishant Uzir</title>
+  <meta name="description" content="A brief description about the blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Nishant Uzir">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tensortotale.com/about">
+  <meta property="og:description" content="A brief description about the blog">
+  <meta property="og:site_name" content="Tensor To Tale">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://tensortotale.com/about">
+  <meta name="twitter:title" content="Nishant Uzir">
+  <meta name="twitter:description" content="A brief description about the blog">
+
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+    <meta property="og:image" content="https://tensortotale.com/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+    <meta name="twitter:image" content="https://tensortotale.com/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+  
+
+  <link href="https://tensortotale.com/feed.xml" type="application/rss+xml" rel="alternate" title="Tensor To Tale Last 10 blog posts" />
+
+  
+
+  
+
+    
+      <link rel="icon" type="image/x-icon" href="/assets/favicon-light-14b4e36c454efda2fa68ca40884e6d5d3e649a96d62ac114bc97a0099d39d756.ico">
+      <link rel="apple-touch-icon" href="/assets/apple-touch-icon-light-fd8917544c758818f49528d6d7785e9677d0744c24db3f1ef92d133dc2853b1a.png">
+      <link rel="stylesheet" type="text/css" title="light" id="light" href="/assets/light-9c0ca06c083cdddb6ebc4c0334ab2473be44dc28d16109b5313fa35347942a04.css">
+      <link rel="stylesheet" type="text/css" title="dark" id="dark" href="/assets/dark-cbfd1bd23d68bc1db862e9460a947516ab7dbffc226aacef985337432f3ab066.css" disabled="true">
+    
+
+  
+
+</head>
+
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav scrollappear">
+  <a href="/" class="header-logo" title="Tensor To Tale">Tensor To Tale</a>
+  <ul class="header-links">
+    
+      <li>
+        <a href="/about" title="About">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-about">
+  <use href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about" xlink:href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="/search" title="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-search">
+  <use href="/assets/search-f0556c34cbbc87ce089ea8b9f545e58f5f9110ec54712b1521f948ea580f65a0.svg#icon-search" xlink:href="/assets/search-f0556c34cbbc87ce089ea8b9f545e58f5f9110ec54712b1521f948ea580f65a0.svg#icon-search"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed.xml" rel="noreferrer noopener" target="_blank" title="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-rss">
+  <use href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss" xlink:href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+      <li>
+        <a onclick="toggle()" title="Toggle Theme">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-theme">
+  <use href="/assets/theme-66869e0bf8dab34bae1c86bda400327b772e0be69e8dc28d3ede896e771320ed.svg#icon-theme" xlink:href="/assets/theme-66869e0bf8dab34bae1c86bda400327b772e0be69e8dc28d3ede896e771320ed.svg#icon-theme"></use>
+</svg>
+
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+
+        <div class="about scrollappear">
   <center>
   <h1>Hello there! Let me tell you a story...</h1>
   <p class = "breakAfter">
@@ -50,7 +165,7 @@ description: "A brief description about the blog"
     <i><b>Tensor To Tale</b></i> is an attempt to bring out plausible and amusing stories from data, especially ones that are not immediately apparent.
   </p>
   <h1>Little bit of my own story...</h1>
-  <img src="{% asset 'about.jpg' @path %}" alt="About Nishant Uzir header image" title = "That's me"/>
+  <img src="/assets/about-1e1280f5a88d19e39e20635f318521194ccb90003ee55cc24665931a72eda8fd.jpg" alt="About Nishant Uzir header image" title = "That's me"/>
   <p class = "breakAfter">
     My name is Nishant Uzir, last name pronounced like the submachine gun <b><a href="https://dictionary.cambridge.org/pronunciation/english/uzi" target="_blank">'Uzi'</a></b> with an <b>'r'</b> added to it, creator and content developer of Tensor To Tale.
   </p>
@@ -87,3 +202,38 @@ description: "A brief description about the blog"
   </center>
 </div>
 
+
+        <footer class="footer scrollappear">
+<center>
+  <p>
+    <i class="fa fa-copyright"></i> 2021 Nishant Uzir. Powered by Jekyll. Based on the Chalk template.
+  </p>
+</center>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+
+<script src="/assets/vendor-734ddaa553ebf4e6ca703bd7c567ef4a0e43b0ba799607355e56b81e88781318.js" type="text/javascript"></script>
+
+
+  <script src="/assets/webfonts-96493456d319d1bf419afdf8701552d4d486fee6afd304897d4fd81eb4e0cc0b.js" type="text/javascript"></script>
+
+
+
+  <script src="/assets/scrollappear-e2da8ea567e418637e31266cc5302126eaa79f62a2273739086358b589a89ee6.js" type="text/javascript"></script>
+
+
+<script src="/assets/application-cfde13ac81ddaf4351b2e739603e2baf688d0fcc9aba613fe62bbb1c7b037fb9.js" type="text/javascript"></script>
+
+
+  <script src="/assets/themetoggle-df0d3d73164dc26dffbd630182ae4d0dfa7bee6b694a2b5d565d73595b582bbf.js" type="text/javascript"></script>
+
+
+<script src="/assets/showhidecomments-0921f3a3b97b83102bddcbff56e757519351c4bd5f126587b14f82b1728671d7.js" type="text/javascript"></script>
+
+
+</body>
+</html>

@@ -1,4 +1,0 @@
----
-slug: keras
-name: Keras
----

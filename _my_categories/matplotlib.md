@@ -1,4 +1,0 @@
----
-slug: matplotlib
-name: Matplotlib
----
